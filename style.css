@@ -213,3 +213,32 @@ body.dark {
   background: #0f0f0f;
   color: #eee;
 }
+/* ===== TO TOP BUTTON ===== */
+
+.to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #c59d5f;   /* ресторанный золотой */
+  color: #111;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s ease;
+  z-index: 9999;
+}
+
+.to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.to-top:hover {
+  transform: translateY(-4px) scale(1.1);
+}
